@@ -1,6 +1,6 @@
 # Classes
 
-Classes are a common feature of object-oriented languages and are avaiable in both Haxe and Python. In general, Laxe's classes have the same syntax as Python, but the special method names and `this` variable works more similarily to Haxe.
+Classes are a common feature of object-oriented languages and are avaiable in both Haxe and Python. In general, Laxe's classes have the same syntax as Python, but the shares Haxe's names for special functions.
 
 Using the `class` keyword, classes can be created using the following syntax:
 ```laxe
@@ -30,7 +30,7 @@ var cls = new MyClass() # prints "Class was created"
 
 ## `self` Reference
 
-Unlike Python, Laxe does not require an explicit `self` argument in methods. It is automatically available on all instance methods. (*Laxe also supports the `this` keyword, which acts as an alias for `self`.*)
+Unlike Python, Laxe does not require an explicit `self` argument in methods. It is automatically available on all instance methods.
 ```laxe
 class MyClass:
 	var member: int

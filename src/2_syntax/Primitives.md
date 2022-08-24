@@ -23,12 +23,12 @@ As you may have noticed so far, while Laxe is typed by Haxe, it uses primitive t
   <tr>
     <td style="padding: 12px;"><code class="hljs">bool</code></td>
     <td><code class="hljs">Bool</code></td>
-    <td>A binary type that stores either <code class="hljs">true</code> or <code class="hljs">false</code></td>
+    <td>A binary type that stores either <code class="hljs">true</code> or <code class="hljs">false</code>.</td>
   </tr>
   <tr>
     <td style="padding: 12px;"><code class="hljs">str</code></td>
-    <td><code class="hljs">String</code></td>
-    <td>The string type for storing and manipulating text.</td>
+    <td><code class="hljs">laxe.stdlib.String</code></td>
+    <td>The string type (wraps Haxe's <code class="hljs">String</code> class).</td>
   </tr>
   <tr>
     <td style="padding: 12px;"><code class="hljs">void</code></td>
@@ -46,18 +46,18 @@ As you may have noticed so far, while Laxe is typed by Haxe, it uses primitive t
     <td>Haxe's special <a href="https://haxe.org/manual/types-dynamic-any.html">Any</a> type.</td>
   </tr>
   <tr>
-    <td style="padding: 12px;"><code class="hljs">expr</code></td>
-    <td><code class="hljs">laxe.ast.LaxeExpr</code></td>
-    <td>Shorthand for Laxe wrapper of Haxe's <code class="hljs">haxe.macro.Expr</code> type. Helpful for metaprogramming.</td>
+    <td style="padding: 12px;"><code class="hljs">expr`</code></td>
+    <td><code class="hljs">laxe.stdlib.LaxeExpr</code></td>
+    <td>Shorthand for Laxe wrapper of Haxe's <code class="hljs">haxe.macro.Expr</code> type.</td>
   </tr>
   <tr>
-    <td style="padding: 12px;"><code class="hljs">typeDef</code></td>
-    <td><code class="hljs">laxe.ast.LaxeTypeDefinition</code></td>
-    <td>Shorthand for Laxe wrapper of Haxe's <code class="hljs">haxe.macro.TypeDefinition</code> type. Helpful for metaprogramming.</td>
+    <td style="padding: 12px;"><code class="hljs">typeDef`</code></td>
+    <td><code class="hljs">laxe.stdlib.LaxeTypeDefinition</code></td>
+    <td>Shorthand for Laxe wrapper of Haxe's <code class="hljs">haxe.macro.TypeDefinition</code> type.</td>
   </tr>
   <tr>
-    <td style="padding: 12px;"><code class="hljs">field</code></td>
-    <td><code class="hljs">laxe.ast.LaxeField</code></td>
-    <td>Shorthand for Laxe wrapper of Haxe's <code class="hljs">haxe.macro.Field</code> type. Helpful for metaprogramming.</td>
+    <td style="padding: 12px;"><code class="hljs">field`</code></td>
+    <td><code class="hljs">laxe.stdlib.LaxeField</code></td>
+    <td>Shorthand for Laxe wrapper of Haxe's <code class="hljs">haxe.macro.Field</code> type.</td>
   </tr>
 </table>
