@@ -6,7 +6,7 @@
             aliases: ["lx"],
             keywords: {
                 keyword:
-                    "alias block break case cast catch const continue decor def default do dynamic dyn else enum extern for function if import in inline macro new override priv pub return self static super switch template this throw trace try type untyped using var while Int int Float float String str Bool bool Dynamic Void void Array expr typeDef field ",
+                    "alias block break case cast catch const continue decor def default do dynamic dyn else enum extern for function if import in inline loop macro new override priv pub return runonce self static super switch template this throw trace try type untyped using var while Int int Float float String str Bool bool Dynamic Void void Array expr typeDef field ",
                 built_in: "trace self",
                 literal: "true false null _",
             },
