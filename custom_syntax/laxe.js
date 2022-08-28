@@ -6,7 +6,7 @@
             aliases: ["lx"],
             keywords: {
                 keyword:
-                    "alias block break case cast catch const continue decor def default do dynamic dyn else enum extern for function if import in inline loop macro new override priv pub return runonce self static super switch template this throw trace try type untyped using var while Int int Float float String str Bool bool Dynamic Void void Array expr typeDef field ",
+                    "alias as block break case cast catch const continue decor def default delete do dynamic dyn else enum extends extern for from function if import in inline is loop macro modify new override pass priv pub replace rename return runonce self static super switch template this throw to trace try type untyped using var while wrapper Int int Float float String str Bool bool Dynamic Void void Array expr typeDef field ",
                 built_in: "trace self",
                 literal: "true false null _",
             },
@@ -67,8 +67,13 @@
                 e.C_NUMBER_MODE,
                 {
                     className: "attribute",
+                    begin: /\@"/,
+                    end: /"/,
+                },
+                {
+                    className: "attribute",
                     begin: /\@/,
-                    end: /\w(?=[\($])/,
+                    end: /\w(?=[\($\n])/,
                 },
                 //{ className: "type", begin: ":[ \t]*\w+", relevance: 0 },
                 //{ className: "type", begin: ":[ \t]*", end: "\\W", excludeBegin: !0, excludeEnd: !0 },
@@ -88,10 +93,10 @@
                 },
                 {
                     className: "class",
-                    begin: "\\b(class|interface) +",
+                    begin: "\\b(class|interface|modify) +",
                     end: "[:$]",
                     excludeEnd: !0,
-                    keywords: "class interface",
+                    keywords: "class interface modify",
                     contains: [
                         {
                             className: "keyword",
